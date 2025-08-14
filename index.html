@@ -82,11 +82,28 @@
     </script>
 
     <link rel="stylesheet" href="style.css" />  
+
+    <!-- Inline CSS for logo positioning -->
+    <style>
+      header {
+        position: relative;
+        padding: 20px;
+        text-align: left;
+      }
+      #logo {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 120px;
+        height: 120px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Free Currency Converter</h1>
       <p>Live exchange rates for USD, GBP, EUR, JPY, and 30+ currencies.</p>
+      <img id="logo" src="logo.png" alt="Site Logo" />
     </header>
 
     <main>
