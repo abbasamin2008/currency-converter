@@ -1,67 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6BHWF2ER71"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BHWF2ER71"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6BHWF2ER71');
+  </script>
 
-  gtag('config', 'G-6BHWF2ER71');
-</script>    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SEO basics -->
-    <title>Free Currency Converter – Live Exchange Rates (USD, GBP, EUR)</title>
-    <meta name="description" content="Convert currencies instantly with live exchange rates. Free online currency converter supporting 30+ currencies including USD, GBP, EUR, JPY. No sign-up." />
-    <link rel="canonical" href="https://abbasamin2008.github.io/currency-converter/" />
+  <!-- SEO -->
+  <title>Free Currency Converter – Live Exchange Rates (USD, GBP, EUR)</title>
+  <meta name="description" content="Free currency converter with live exchange rates for USD, GBP, EUR, JPY, and more. Instant, accurate, and mobile-friendly. No sign-up required." />
+  <link rel="canonical" href="https://abbasamin2008.github.io/currency-converter/" />
+  <meta name="keywords" content="currency converter, live exchange rates, USD to GBP, EUR to USD, free currency conversion, forex tool" />
 
-    <!-- Google Search Console verification -->
-    <meta name="google-site-verification" content="O3QucjM9Xng53hkDw2RSdPAXtmBEYEM6AyPh1x9jGO8" />
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="O3QucjM9Xng53hkDw2RSdPAXtmBEYEM6AyPh1x9jGO8" />
 
-    <!-- Open Graph / Twitter (helps sharing + click-through) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Free Currency Converter – Live Exchange Rates" />
-    <meta property="og:description" content="Instant currency conversion with live rates. Free, fast, and mobile-friendly." />
-    <meta property="og:url" content="https://abbasamin2008.github.io/currency-converter/" />
-    <meta property="og:image" content="https://abbasamin2008.github.io/currency-converter/og-image.jpg" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Free Currency Converter – Live Exchange Rates" />
+  <meta property="og:description" content="Instant currency conversion with live rates. Free, fast, and mobile-friendly." />
+  <meta property="og:url" content="https://abbasamin2008.github.io/currency-converter/" />
+  <meta property="og:image" content="https://abbasamin2008.github.io/currency-converter/og-image.jpg" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Free Currency Converter – Live Exchange Rates" />
-    <meta name="twitter:description" content="Instant currency conversion with live rates. Free, fast, and mobile-friendly." />
-    <meta name="twitter:image" content="https://abbasamin2008.github.io/currency-converter/og-image.jpg" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Free Currency Converter – Live Exchange Rates" />
+  <meta name="twitter:description" content="Instant currency conversion with live rates. Free, fast, and mobile-friendly." />
+  <meta name="twitter:image" content="https://abbasamin2008.github.io/currency-converter/og-image.jpg" />
 
-    <!-- Structured data: WebApplication -->
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"WebApplication",
-      "name":"Free Currency Converter",
-      "applicationCategory":"FinanceApplication",
-      "operatingSystem":"Web",
-      "url":"https://abbasamin2008.github.io/currency-converter/",
-      "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
-    }
-    </script>
+  <!-- Structured Data: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"Free Currency Converter",
+    "applicationCategory":"FinanceApplication",
+    "operatingSystem":"Web",
+    "url":"https://abbasamin2008.github.io/currency-converter/",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
+  }
+  </script>
 
-    <link rel="stylesheet" href="style.css" />  
-  </head>
-  <body>
-    <h1>Free Currency Converter</h1>
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are the exchange rates live?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The converter fetches the latest rates from an API so results reflect current market prices."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this currency converter free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. It’s 100% free to use on desktop and mobile."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often are rates updated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rates are refreshed regularly during the day. For the most accurate quote, always click Convert to pull the latest rate."
+        }
+      }
+    ]
+  }
+  </script>
 
-    <label for="fromCurrency">From:</label>
-    <select id="fromCurrency"></select>
+  <link rel="stylesheet" href="style.css" />  
+</head>
+<body>
+  <header>
+    <h1>Free Currency Converter – Live Exchange Rates</h1>
+  </header>
 
-    <label for="toCurrency">To:</label>
-    <select id="toCurrency"></select>
+  <main>
+    <form id="converter-form" aria-label="Currency Converter">
+      <label for="fromCurrency">From:</label>
+      <select id="fromCurrency"></select>
 
-    <label for="amount">Amount:</label>
-    <input type="number" id="amount" placeholder="Enter amount" />
+      <label for="toCurrency">To:</label>
+      <select id="toCurrency"></select>
 
-    <button id="convertBtn">Convert</button>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount" min="0" step="any" />
 
-    <p id="result"></p>
-    <script src="script.js"></script>
-  </body>
+      <button type="button" id="convertBtn">Convert</button>
+    </form>
+
+    <p id="result" role="status"></p>
+    <hr />
+
+    <section aria-labelledby="about-converter">
+      <h2 id="about-converter">About Our Currency Converter</h2>
+      <p>
+        Convert currencies instantly with live exchange rates. Choose your “From” and “To”
+        currencies (USD, GBP, EUR, JPY and many more), enter an amount, and click Convert.
+        Our rates are fetched from a trusted API and updated frequently so your conversions
+        reflect the latest market prices. The tool is free, mobile-friendly, and works in any browser.
+      </p>
+    </section>
+
+    <section aria-labelledby="how-to-use">
+      <h2 id="how-to-use">How to Use the Currency Converter</h2>
+      <ol>
+        <li>Pick your <strong>From</strong> currency (e.g., USD).</li>
+        <li>Pick your <strong>To</strong> currency (e.g., GBP).</li>
+        <li>Enter the <strong>Amount</strong> you want to convert.</li>
+        <li>Click <strong>Convert</strong> to see the result instantly.</li>
+      </ol>
+      <p>
+        Popular conversions: USD ⇄ GBP, EUR ⇄ GBP, USD ⇄ EUR, JPY ⇄ USD, INR ⇄ USD.
+      </p>
+    </section>
+
+    <section aria-labelledby="supported-currencies">
+      <h2 id="supported-currencies">Supported Currencies</h2>
+      <p>
+        Major and emerging currencies including: USD (US Dollar), GBP (British Pound), EUR (Euro),
+        JPY (Japanese Yen), AUD, CAD, CHF, CNY, INR, KRW, SGD, ZAR and more.
+      </p>
+    </section>
+
+    <section aria-labelledby="faq">
+      <h2 id="faq">Frequently Asked Questions</h2>
+      <article>
+        <h3>Are the exchange rates live?</h3>
+        <p>Yes. The converter fetches the latest rates from an API so results reflect current market prices.</p>
+      </article>
+      <article>
+        <h3>Is this currency converter free?</h3>
+        <p>Absolutely. It’s 100% free to use on desktop and mobile.</p>
+      </article>
+      <article>
+        <h3>How often are rates updated?</h3>
+        <p>Rates are refreshed regularly during the day. For the most accurate quote, always click Convert to pull the latest rate.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Free Currency Converter. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
